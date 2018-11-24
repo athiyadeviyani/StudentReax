@@ -2,7 +2,7 @@ import boto3
 import json 
 
 comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
-text = "ILA is such a shitty course. Fuck that Pamela bitch"
+text = "Calculus is a shitty course"
 result = json.dumps(comprehend.detect_sentiment(Text=text, LanguageCode='en'), sort_keys=True, indent=4)
 stuff = json.loads(result)
 
