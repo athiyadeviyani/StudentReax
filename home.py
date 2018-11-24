@@ -72,6 +72,29 @@ with open('feedback.csv') as csv_file:
         print("#######################################")
         print("")
 
+        import matplotlib.pyplot as plt
+ 
+        # Data to plot
+        title = ""
+        if course == inf2a:
+            title = "INF2A"
+        elif course == inf2ccs:
+            title = "INF2C-CS"
+        elif course == inf2cse:
+            title = "INF2C-SE"
+        elif course == dmmr:
+            title = "DMMR"
+            
+        plt.title(title)
+        labels = 'Positive', 'Negative', 'Mixed', 'Neutral'
+        sizes = [positivecount * 100/ total, negativecount * 100/ total, mixedcount * 100/ total, neutralcount * 100/ total]
+        colors = ['yellowgreen', 'lightcoral', 'lightskyblue', 'gold']
+        patches, texts = plt.pie(sizes, colors=colors, shadow=True, startangle=90)
+        plt.legend(patches, labels, loc="best")
+        plt.axis('equal')
+        plt.tight_layout()
+        plt.show()
+
 
 
 
