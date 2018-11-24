@@ -3,6 +3,8 @@ import json
 import tkinter as tk
 from tkinter.filedialog import askopenfilename
 import csv
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
 #import pandas as pd
 
 inf2a = []
@@ -72,7 +74,8 @@ with open('feedback.csv') as csv_file:
         print("#######################################")
         print("")
 
-        import matplotlib.pyplot as plt
+
+   # for course in course_arrays:
  
         # Data to plot
         title = ""
@@ -84,7 +87,7 @@ with open('feedback.csv') as csv_file:
             title = "INF2C-SE"
         elif course == dmmr:
             title = "DMMR"
-            
+
         plt.title(title)
         labels = 'Positive', 'Negative', 'Mixed', 'Neutral'
         sizes = [positivecount * 100/ total, negativecount * 100/ total, mixedcount * 100/ total, neutralcount * 100/ total]
@@ -93,7 +96,8 @@ with open('feedback.csv') as csv_file:
         plt.legend(patches, labels, loc="best")
         plt.axis('equal')
         plt.tight_layout()
-        plt.show()
+        #plt.show()
+        plt.savefig(title + '_report.png')
 
 
 
