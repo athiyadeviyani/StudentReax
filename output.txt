@@ -1,0 +1,36 @@
+
+COURSE NAME: INF2A
+POSITIVE: 31.25%
+NEGATIVE: 50.00%
+MIXED: 6.25%
+NEUTRAL: 12.50%
+
+#######################################
+
+
+COURSE NAME: INF2C-CS
+POSITIVE: 60.00%
+NEGATIVE: 20.00%
+MIXED: 0.00%
+NEUTRAL: 20.00%
+
+#######################################
+
+
+COURSE NAME: INF2C-SE
+POSITIVE: 14.29%
+NEGATIVE: 42.86%
+MIXED: 14.29%
+NEUTRAL: 28.57%
+
+#######################################
+
+
+COURSE NAME: DMMR
+POSITIVE: 41.67%
+NEGATIVE: 41.67%
+MIXED: 0.00%
+NEUTRAL: 16.67%
+
+#######################################
+
