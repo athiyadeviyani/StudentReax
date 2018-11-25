@@ -203,6 +203,18 @@ def view_statistics():
     print >> f, "Total number of feedback received = " + str(line_count - 1)
     messagebox.showinfo('MESSAGE', 'Complete statistics are successfully printed to output.txt!')
 
+BUCKET = "com-oxfordhack-enable"
+KEY = "ouput.txt"
+IMAGE_ID = KEY
+FEATURES_BLACKLIST = ("Landmarks", "Emotions", "Pose", "Quality", "BoundingBox", "Confidence")
+COLLECTION = "my-collection-id"
+
+s3 = boto3.client('s3')
+file_name = '/Users/Edon/Desktop/oxhack-master/output.txt'
+key_name = 'output.txt'
+s3.upload_file(file_name, BUCKET, key_name)
+
+
 def view_all():
     os.system("open " + str(resource_path("feedback.csv")))
 
