@@ -1,3 +1,7 @@
+# Student Reax
+Oxford Hack 2018 submission.
+<br><b>Prizes:</b> 2nd place Oxford Hack winner and 3rd place AWS Educate Award: Most Innovative or Out-of-the-Box way to use Amazon Web Services ML/VR/AR services to improve Tomorrow's Higher Education.
+
 ## Inspiration  
 Upon inspection of the AWS API it was immediately clear that its computer vision and natural language processing capabilities would be ideal in the context of higher education. Professors across universities lack a concrete way of receiving feedback. The only chance for any kind of feedback is end of semester questionnaires. This method is slow, time-consuming and most importantly inefficient. We wanted to create an app that would allow professors to understand how their students are engaging with their course and make necessary changes not a year after they received the feedback but the very next moment. So, we created Student Reax.
 
